@@ -1,0 +1,65 @@
+body {
+    display: block;
+    margin: 8px;
+    padding: 0;
+    background-color: #492D2D;
+    color: white;
+    background-image: url("daisies.png");
+    background-position: top;
+    background-size: unset;
+}
+div#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 520px;
+}
+h1#title {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: 10px;
+    letter-spacing: -2px;
+    text-decoration: underline;
+    user-select: none;
+}
+p#text-feed {
+    margin: 10px;
+    font-size: 16px;
+    margin-left: 15%;
+    margin-right: 15%;
+    line-height: 32px;
+    font-family: sans-serif;
+    user-select: none;
+    text-align: center;
+}
+button {
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: block;
+    width: calc(100% - 50px);
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+button:active {
+    color: rgb(255, 119, 119);
+    outline: 2px solid rgb(255, 119, 119);
+    user-select: none;
+}
+button:focus {
+    outline: 2px solid rgb(255, 119, 119);
+}
+@media only screen and (max-width: 545px) {
+    div#content {
+        width: inherit;
+    }
+}
+@media only screen and (min-width: 900px) {
+    body {
+        zoom: 1.33;
+    }
+}
